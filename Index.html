@@ -5,35 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caja de Herramientas Digital</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = { darkMode: 'class' }
-    </script>
-    <style>
-        .accordion-content { display: none; }
-        .active .accordion-content { display: block; }
-        .chevron { transition: transform 0.3s; }
-        .active .chevron { transform: rotate(180deg); }
-    </style>
-</head>
-<body class="bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 min-h-screen p-4 md:p-8 transition-colors duration-300">
-
-    <div class="max-w-5xl mx-auto">
-        <header class="flex justify-between items-center mb-10">
-            <div>
-                <h1 class="text-3xl font-bold text-blue-600 dark:text-blue-400">Caja de Herramientas</h1>
-                <p class="text-slate-600 dark:text-slate-400">Tu centro de bienestar escolar y familiar.</p>
-            </div>
-            <button onclick="document.documentElement.classList.toggle('dark')" class="p-3 bg-slate-200 dark:bg-slate-800 rounded-full hover:bg-slate-300 dark:hover:bg-slate-700 shadow-lg border border-slate-300 dark:border-slate-700">
-                🌓
-            </button>
-        </header>
-
-        <input type="text" id="searchInput" onkeyup="filter()" placeholder="🔍 Busca consejos, estrategias o retos..." class="w-full p-4 mb-8 rounded-2xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 outline-none focus:ring-2 focus:ring-blue-500 shadow-sm">
-
-        <div id="quote" class="mb-8 p-6 bg-indigo-100 dark:bg-indigo-900/50 rounded-2xl text-center font-bold text-indigo-800 dark:text-blue-200 border border-indigo-200 dark:border-indigo-800 italic"></div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10" id="container">
-            
+...
             <!-- Organizador -->
             <div class="bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 accordion">
                 <button onclick="toggle(this)" class="w-full flex justify-between items-center font-bold text-blue-700 dark:text-blue-300">
